@@ -1,0 +1,18 @@
+---
+title: "About"
+image: ./img/logo.png
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/statisticsplaybook
+    # (additional links excluded for brevity)
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+---
+
+## 슬통이
+
+통계를 사랑하고, R을 사랑하는 유튜버 입니다.

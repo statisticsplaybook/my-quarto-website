@@ -1,0 +1,16 @@
+---
+title: 슬기로운통계생활 Blog
+subtitle: News, tips, about R and Stat
+listing:
+  sort: "date desc"
+  contents: "posts"
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: true
+page-layout: full
+margin-header: signup.html
+title-block-banner: "#373A3C"
+title-block-banner-color: white
+search: false
+---

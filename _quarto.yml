@@ -1,0 +1,48 @@
+project:
+  type: website
+
+website:
+  title: "슬기로운 통계생활"
+  navbar:
+    search: true
+    background: dark
+    logo: ./img/logo.png
+    collapse-below: lg
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "R 기초통계"
+        file: docs/rstat101/index.qmd
+      - text: "About"
+        file: about.qmd
+      - text: "Contact"
+        file: contact.qmd
+      - text: "Blog"
+        file: docs/blog/index.qmd
+
+    right:  
+      - icon: github
+        href: https://github.com/statisticsplaybook
+        aria-label: 슬기로운통계생활 GitHub
+  sidebar:
+    - title: "R 기초통계"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - docs/rstat101/index.qmd
+        - docs/rstat101/lec1.qmd
+        
+
+    - title: "Contact"
+      contents: 
+        - contact.qmd
+        
+format:
+  html:
+    theme: Flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+

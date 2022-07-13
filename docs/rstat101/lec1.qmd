@@ -1,0 +1,13 @@
+---
+title: test page
+---
+
+this is test page
+
+```{r}
+x <- 1:10
+y <- x^2
+plot(x, y)
+```
+
+현재는 테스트 중 입니다.

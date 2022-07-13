@@ -1,0 +1,16 @@
+{
+  "hash": "d5ac9d1fc74442d4c7fffe3dd968a89b",
+  "result": {
+    "markdown": "---\ntitle: \"시작하며\"\nsubtitle: \"R로 배우는 기초통계 시작합니다.\"\nformat:\n  html\npage-layout: full\ntoc: false\nanchor-sections: false\n---\n\n\n안녕하세요! 반갑습니다!\n\nR 통계 첫 시간에 해야할 일은 다음과 같습니다.\n\n-   R 설치\n\n-   기초 문법 다지기\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- 1:10\n```\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

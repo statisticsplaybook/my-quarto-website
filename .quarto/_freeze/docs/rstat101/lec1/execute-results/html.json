@@ -1,0 +1,16 @@
+{
+  "hash": "c302ffb1f59d701f6e1852a56cb02506",
+  "result": {
+    "markdown": "---\ntitle: test page\n---\n\n\nthis is test page\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- 1:10\ny <- x^2\nplot(x, y)\n```\n\n::: {.cell-output-display}\n![](lec1_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n현재는 테스트 중 입니다.\n",
+    "supporting": [
+      "lec1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,21 @@
+---
+title: "시작하며"
+subtitle: "R로 배우는 기초통계 시작합니다."
+format:
+  html
+page-layout: full
+toc: false
+anchor-sections: false
+---
+
+안녕하세요! 반갑습니다!
+
+R 통계 첫 시간에 해야할 일은 다음과 같습니다.
+
+-   R 설치
+
+-   기초 문법 다지기
+
+```{r}
+x <- 1:10
+```

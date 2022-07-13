@@ -1,0 +1,16 @@
+{
+  "hash": "11f85a91ff63652bf3ae7908cc41b92a",
+  "result": {
+    "markdown": "---\ntitle: 1",
+    "supporting": [
+      "rstat101-lec1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

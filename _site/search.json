@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "통계를 사랑하고, R을 사랑하는 유튜버 입니다."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "저를 찾아오시려거든 유튜브 슬기로운 통계생활로 오세요!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Main page",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\\[\n\\int_a^b x^2 dx\n\\]\n업데이트 자동으로 보여지나요?"
+  }
+]
