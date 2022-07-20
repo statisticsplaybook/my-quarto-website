@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://statisticsplaybook-qmd.netlify.app/docs/blog/index.html</loc>
-    <lastmod>2022-07-20T14:42:30.356Z</lastmod>
+    <loc>https://statisticsplaybook-qmd.netlify.app/about.html</loc>
+    <lastmod>2022-07-20T14:45:33.475Z</lastmod>
   </url>
   <url>
-    <loc>https://statisticsplaybook-qmd.netlify.app/index.html</loc>
-    <lastmod>2022-07-20T14:41:06.814Z</lastmod>
+    <loc>https://statisticsplaybook-qmd.netlify.app/contact.html</loc>
+    <lastmod>2022-07-20T14:45:34.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statisticsplaybook-qmd.netlify.app/docs/blog/index.html</loc>
+    <lastmod>2022-07-20T14:45:34.828Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-06-myfirst-post/index.html</loc>
+    <lastmod>2022-07-20T14:45:35.455Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/index.html</loc>
+    <lastmod>2022-07-20T14:45:36.003Z</lastmod>
   </url>
   <url>
     <loc>https://statisticsplaybook-qmd.netlify.app/docs/rstat101/index.html</loc>
-    <lastmod>2022-07-20T14:41:19.865Z</lastmod>
+    <lastmod>2022-07-20T14:45:37.639Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statisticsplaybook-qmd.netlify.app/docs/rstat101/lec1.html</loc>
+    <lastmod>2022-07-20T14:45:39.366Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statisticsplaybook-qmd.netlify.app/index.html</loc>
+    <lastmod>2022-07-20T14:45:41.225Z</lastmod>
   </url>
 </urlset>
