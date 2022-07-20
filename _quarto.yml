@@ -26,6 +26,9 @@ website:
       - icon: github
         href: https://github.com/statisticsplaybook
         aria-label: 슬기로운통계생활 GitHub
+      - icon: rss
+        href: index.xml
+        
   sidebar:
     - title: "R 기초통계"
       style: "floating"
