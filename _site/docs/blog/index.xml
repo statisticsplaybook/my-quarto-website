@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>슬기로운 통계생활</title>
+<link>https://statisticsplaybook-qmd.netlify.app/docs/blog/index.html</link>
+<atom:link href="https://statisticsplaybook-qmd.netlify.app/docs/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>슬기로운 통계생활 QMD 블로그</description>
+<generator>quarto-0.9.647</generator>
+<lastBuildDate>Thu, 07 Jul 2022 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>두번째 포스트</title>
+  <dc:creator>슬기로운통계생활</dc:creator>
+  <link>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/coding.jpg" class="preview-image img-fluid figure-img" alt="코딩하는 이미지 입니다."></p>
+</figure>
+</div>
+<section id="callout-basics" class="level2">
+<h2 class="anchored" data-anchor-id="callout-basics">Callout Basics</h2>
+<p>내마음대로 작성!</p>
+<ul>
+<li>note</li>
+<li>tip</li>
+<li>important</li>
+<li>caution</li>
+<li>warning</li>
+</ul>
+<p>The color and icon will be different depending upon the type that you select.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>Authoring</category>
+  <guid>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/index.html</guid>
+  <pubDate>Thu, 07 Jul 2022 04:00:00 GMT</pubDate>
+  <media:content url="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/coding.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Using Callouts</title>
+  <dc:creator>Charles Teague</dc:creator>
+  <link>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-06-myfirst-post/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Callouts are an excellent way to draw extra attention to certain concepts, or to more clearly indicate that certain content is supplemental or applicable to only some scenarios.</p>
+<section id="callout-basics" class="level2">
+<h2 class="anchored" data-anchor-id="callout-basics">Callout Basics</h2>
+<p>There are five different types of callouts available.</p>
+<ul>
+<li>note</li>
+<li>tip</li>
+<li>important</li>
+<li>caution</li>
+<li>warning</li>
+</ul>
+<p>The color and icon will be different depending upon the type that you select.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Features</category>
+  <category>Authoring</category>
+  <guid>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-06-myfirst-post/index.html</guid>
+  <pubDate>Sun, 13 Feb 2022 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

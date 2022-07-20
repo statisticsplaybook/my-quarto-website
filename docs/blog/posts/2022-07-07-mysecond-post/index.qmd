@@ -12,9 +12,7 @@ image: coding.jpg
 image-alt: "코딩하는 이미지 입니다."
 ---
 
-
 ![](coding.jpg){.preview-image fig-align="center" fig-alt="코딩하는 이미지 입니다."}
-
 
 ## Callout Basics
 
@@ -27,4 +25,3 @@ image-alt: "코딩하는 이미지 입니다."
 -   warning
 
 The color and icon will be different depending upon the type that you select.
-
