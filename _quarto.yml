@@ -3,7 +3,7 @@ project:
 
 website:
   title: "슬기로운 통계생활"
-  site-url: https://statisticsplaybook-qmd.netlify.app/
+  site-url: "https://statisticsplaybook-qmd.netlify.app/"
   description: "슬기로운 통계생활 QMD 블로그"
   navbar:
     search: true
