@@ -8,6 +8,8 @@ website:
   navbar:
     search: true
     background: dark
+    foreground: white
+    highlight: link-color
     logo: ./img/logo.png
     collapse-below: lg
     left:
@@ -45,7 +47,7 @@ website:
         
 format:
   html:
-    theme: Flatly
+    theme: simplex
     css: styles.css
     toc: true
 

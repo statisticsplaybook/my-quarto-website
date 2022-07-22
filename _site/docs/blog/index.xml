@@ -10,7 +10,58 @@
 <atom:link href="https://statisticsplaybook-qmd.netlify.app/docs/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>슬기로운 통계생활 QMD 블로그</description>
 <generator>quarto-0.9.647</generator>
-<lastBuildDate>Thu, 07 Jul 2022 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 22 Jul 2022 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Quarto 블로그에 Subscribe 버튼 설정하기</title>
+  <dc:creator>이삭</dc:creator>
+  <link>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/quartoblog-subscribe/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="quarto-블로그의-구독버튼-설정" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-블로그의-구독버튼-설정">Quarto 블로그의 구독버튼 설정</h2>
+<p>Quarto를 사용하여 웹사이트를 만들게 되면 사이트 안에 블로그 (정확히는 listing page)를 구성할 수 있게 된다. 공식 홈페이지의 설명이 불충분하게 되어있고, 실제 이메일 서비스와의 연결 방법은 생략되어 있어 작성하게 되었다.</p>
+<section id="signup.html-코드" class="level3">
+<h3 class="anchored" data-anchor-id="signup.html-코드">signup.html 코드</h3>
+<p>블로그를 구성하기 위하여 <code>docs</code> 폴더 안에 <code>blog</code> 폴더를 만들어야 하고, <code>blog</code> 폴더 바로 아래 구독 버튼과 관련한 파일인 <code>signup.html</code> 파일을 찾을 수 있다.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="sc" style="color: #5E5E5E;">&lt;!--</span> Begin Mailchimp Signup Form <span class="sc" style="color: #5E5E5E;">-</span><span class="ot" style="color: #003B4F;">-&gt;</span></span>
+<span id="cb1-2"><span class="er" style="color: #AD0000;">&lt;</span>div id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc_embed_signup"</span> style<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"padding-bottom: 1em; max-width: 400px;"</span> class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"ms-auto me-auto"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-3"><span class="er" style="color: #AD0000;">&lt;</span>form action<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"이메일 서비스 가입후 본인 것으로 채워야하는 내용"</span> method<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"post"</span> id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc-embedded-subscribe-form"</span> name<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc-embedded-subscribe-form"</span> class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"validate"</span> target<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"_blank"</span> novalidate<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-4">    <span class="er" style="color: #AD0000;">&lt;</span>div id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc_embed_signup_scroll"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-5">    <span class="er" style="color: #AD0000;">&lt;</span>h3<span class="sc" style="color: #5E5E5E;">&gt;</span>구독하기<span class="sc" style="color: #5E5E5E;">&lt;</span><span class="er" style="color: #AD0000;">/</span>h3<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-6"><span class="er" style="color: #AD0000;">&lt;</span>div class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc-field-group"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-7">    <span class="er" style="color: #AD0000;">&lt;</span>label <span class="cf" style="color: #003B4F;">for</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mce-EMAIL"</span><span class="sc" style="color: #5E5E5E;">&gt;</span>이메일주소<span class="sc" style="color: #5E5E5E;">&lt;</span><span class="er" style="color: #AD0000;">/</span>label<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-8">    <span class="er" style="color: #AD0000;">&lt;</span>input type<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"email"</span> value<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">""</span> name<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"EMAIL"</span> class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"required email"</span> id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mce-EMAIL"</span> style<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"font-size: 0.8em; padding: .2em;"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-9"><span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-10">    <span class="er" style="color: #AD0000;">&lt;</span>div id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mce-responses"</span> class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"clear foot"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-11">        <span class="er" style="color: #AD0000;">&lt;</span>div class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"response"</span> id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mce-error-response"</span> style<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"display:none"</span><span class="sc" style="color: #5E5E5E;">&gt;</span><span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-12">        <span class="er" style="color: #AD0000;">&lt;</span>div class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"response"</span> id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mce-success-response"</span> style<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"display:none"</span><span class="sc" style="color: #5E5E5E;">&gt;</span><span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-13">    <span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-14"><span class="er" style="color: #AD0000;">&lt;</span><span class="sc" style="color: #5E5E5E;">!--</span> real people should not fill this <span class="cf" style="color: #003B4F;">in</span> and expect good things <span class="sc" style="color: #5E5E5E;">-</span> do not remove this or risk form bot signups<span class="sc" style="color: #5E5E5E;">-</span><span class="ot" style="color: #003B4F;">-&gt;</span></span>
+<span id="cb1-15">    <span class="er" style="color: #AD0000;">&lt;</span>div style<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"position: absolute; left: -5000px;"</span> aria<span class="sc" style="color: #5E5E5E;">-</span>hidden<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"true"</span><span class="sc" style="color: #5E5E5E;">&gt;</span><span class="er" style="color: #AD0000;">&lt;</span>input type<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"text"</span> name<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"b_3a65f9cd50e92382b37c77ca5_431ec6d99a"</span> tabindex<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"-1"</span> value<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">""</span><span class="sc" style="color: #5E5E5E;">&gt;</span><span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-16">        <span class="er" style="color: #AD0000;">&lt;</span>div class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"optionalParent"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-17">                <span class="er" style="color: #AD0000;">&lt;</span>input type<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"submit"</span> value<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"Subscribe"</span> name<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"subscribe"</span> id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc-embedded-subscribe"</span> style<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"min-width: 150px; font-size: 0.8em;"</span> id<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"mc-embedded-subscribe"</span> class<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"button btn btn-light btn-sm ms-auto me-auto"</span><span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-18">        <span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-19">    <span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-20"><span class="er" style="color: #AD0000;">&lt;/</span>form<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-21"><span class="er" style="color: #AD0000;">&lt;/</span>div<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-22"><span class="er" style="color: #AD0000;">&lt;</span>script type<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'text/javascript'</span> src<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'</span><span class="sc" style="color: #5E5E5E;">&gt;</span><span class="er" style="color: #AD0000;">&lt;/</span>script<span class="sc" style="color: #5E5E5E;">&gt;</span><span class="er" style="color: #AD0000;">&lt;</span>script type<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'text/javascript'</span><span class="sc" style="color: #5E5E5E;">&gt;</span>(<span class="cf" style="color: #003B4F;">function</span>(<span class="sc" style="color: #5E5E5E;">$</span>) {window.fnames <span class="ot" style="color: #003B4F;">=</span> new <span class="fu" style="color: #4758AB;">Array</span>(); window.ftypes <span class="ot" style="color: #003B4F;">=</span> new <span class="fu" style="color: #4758AB;">Array</span>();fnames[<span class="dv" style="color: #AD0000;">0</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'EMAIL'</span>;ftypes[<span class="dv" style="color: #AD0000;">0</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'email'</span>;fnames[<span class="dv" style="color: #AD0000;">1</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'FNAME'</span>;ftypes[<span class="dv" style="color: #AD0000;">1</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'text'</span>;fnames[<span class="dv" style="color: #AD0000;">2</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'LNAME'</span>;ftypes[<span class="dv" style="color: #AD0000;">2</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'text'</span>;fnames[<span class="dv" style="color: #AD0000;">3</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'ADDRESS'</span>;ftypes[<span class="dv" style="color: #AD0000;">3</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'address'</span>;fnames[<span class="dv" style="color: #AD0000;">4</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'PHONE'</span>;ftypes[<span class="dv" style="color: #AD0000;">4</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'phone'</span>;fnames[<span class="dv" style="color: #AD0000;">5</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'BIRTHDAY'</span>;ftypes[<span class="dv" style="color: #AD0000;">5</span>]<span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">'birthday'</span>;}(jQuery));var <span class="sc" style="color: #5E5E5E;">$</span>mcj <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">jQuery.noConflict</span>(true);<span class="sc" style="color: #5E5E5E;">&lt;</span><span class="er" style="color: #AD0000;">/</span>script<span class="sc" style="color: #5E5E5E;">&gt;</span></span>
+<span id="cb1-23"><span class="er" style="color: #AD0000;">&lt;</span><span class="sc" style="color: #5E5E5E;">!--</span>End mc_embed_signup<span class="sc" style="color: #5E5E5E;">-</span><span class="ot" style="color: #003B4F;">-&gt;</span></span></code></pre></div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Blog</category>
+  <category>Quarto</category>
+  <guid>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/quartoblog-subscribe/index.html</guid>
+  <pubDate>Fri, 22 Jul 2022 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>두번째 포스트</title>
   <dc:creator>슬기로운통계생활</dc:creator>
@@ -46,37 +97,6 @@
   <guid>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/index.html</guid>
   <pubDate>Thu, 07 Jul 2022 04:00:00 GMT</pubDate>
   <media:content url="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-07-mysecond-post/coding.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Using Callouts</title>
-  <dc:creator>Charles Teague</dc:creator>
-  <link>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-06-myfirst-post/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Callouts are an excellent way to draw extra attention to certain concepts, or to more clearly indicate that certain content is supplemental or applicable to only some scenarios.</p>
-<section id="callout-basics" class="level2">
-<h2 class="anchored" data-anchor-id="callout-basics">Callout Basics</h2>
-<p>There are five different types of callouts available.</p>
-<ul>
-<li>note</li>
-<li>tip</li>
-<li>important</li>
-<li>caution</li>
-<li>warning</li>
-</ul>
-<p>The color and icon will be different depending upon the type that you select.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Features</category>
-  <category>Authoring</category>
-  <guid>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/2022-07-06-myfirst-post/index.html</guid>
-  <pubDate>Sun, 13 Feb 2022 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
