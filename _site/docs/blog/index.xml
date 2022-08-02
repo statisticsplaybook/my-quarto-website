@@ -10,7 +10,380 @@
 <atom:link href="https://statisticsplaybook-qmd.netlify.app/docs/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>슬기로운 통계생활 QMD 블로그</description>
 <generator>quarto-0.9.647</generator>
-<lastBuildDate>Fri, 22 Jul 2022 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 02 Aug 2022 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>qmd 작성법 배우기</title>
+  <dc:creator>슬기로운통계생활</dc:creator>
+  <link>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="가장-중요한-단축키" class="level2">
+<h2 class="anchored" data-anchor-id="가장-중요한-단축키">가장 중요한 단축키</h2>
+<p>visual editor에서 사용하는 모든 기능을 찾을 수 있는 검색 단축키 <code>Ctrl + /</code> 는 무조건 알고 있어야 한다.</p>
+</section>
+<section id="글자-서식-방법" class="level2">
+<h2 class="anchored" data-anchor-id="글자-서식-방법">글자 서식 방법!</h2>
+<p>글자를 굵게 표현: <strong>Ctrl + B</strong></p>
+<p>글자를 기울게 표현: <em>Ctrl + I</em></p>
+<p>글자 스트록 넣기: ~~테스트~~ <del>테스트</del></p>
+<p>위 첨자: <code>테스트^위첨자^</code> 테스트<sup>위첨자</sup></p>
+<p>아래 첨자: <code>테스트~위첨자~</code> 테스트<sub>아래첨자</sub></p>
+<p>인라인 코드 넣기(문서 안에 코드 폰트로 넣기): <code>Ctrl + D</code></p>
+</section>
+<section id="각종-제목-넣기" class="level2">
+<h2 class="anchored" data-anchor-id="각종-제목-넣기">각종 제목 넣기</h2>
+<p>Ctrl + / 를 사용해서 H1 ~ H6 까지 찾아서 쓰자!</p>
+</section>
+<section id="링크-넣는법" class="level2">
+<h2 class="anchored" data-anchor-id="링크-넣는법">링크 넣는법!</h2>
+<p>Qmd에서 바로 작업시에는 대괄호 안에 표현될 글자, 중괄호 안에 연결할 링크를 넣어야 하지만, Visual Editor에서는 작동하지 않음</p>
+<p><code>[Quarto](https://quarto.org)</code></p>
+<p>Visual Editor 단축키: Ctrl + K</p>
+<p><a href="https://quarto.org">Quarto</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/link.png" class="img-fluid figure-img" alt="링크 삽입 시 나오는 visual editor 메뉴화면" width="450"></p>
+<p></p><p></p>
+</figure>
+</div>
+</section>
+<section id="이미지-넣는-법" class="level2">
+<h2 class="anchored" data-anchor-id="이미지-넣는-법">이미지 넣는 법!</h2>
+<p>에디터 위쪽 그림버튼 클릭하기, 혹은 Ctrl+/ 로 Figure 검색하면 다음과 같은 화면이 나온다.</p>
+<p>Browse 버튼 눌러서 파일 선택하거나, URL을 집어넣으면 됨.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/image-insert.png" class="img-fluid figure-img" width="450"></p>
+<p></p><p></p>
+</figure>
+</div>
+<p>크기 조정하는 방법은 일단 삽입 후 점 버튼을 눌러 볼것!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/image-insert2.png" class="img-fluid figure-img" width="450"></p>
+</figure>
+</div>
+<p>오른쪽의 점 세개를 클릭하면 그림 사이즈 조정하는 옵션 뜬다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/image-insert3.png" class="img-fluid figure-img" width="450"></p>
+</figure>
+</div>
+</section>
+<section id="리스트-만들기" class="level2">
+<h2 class="anchored" data-anchor-id="리스트-만들기">리스트 만들기</h2>
+<p>방법1. 위쪽 버튼 클릭 혹은 Ctrl + / 검색하기!</p>
+<p>방법 2. 그냥 별표 (*) 누르고, 혹은 1. 입력 후, 한 칸 공백을 삽입하면 자동으로 리스트 작성모드로 들어감.</p>
+<ol type="1">
+<li>테스트
+<ol type="I">
+<li><p>테스트</p></li>
+<li><p>테스트</p></li>
+</ol></li>
+<li>테스트</li>
+</ol>
+<p>ordered 리스트 삽입 후 점 세개 버튼을 클릭하면, 기존의 리스팅 번호를 바꿀 수 있음!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/orderedlist.png" class="img-fluid figure-img" width="450"></p>
+</figure>
+</div>
+</section>
+<section id="테이블-입력하기" class="level2">
+<h2 class="anchored" data-anchor-id="테이블-입력하기">테이블 입력하기</h2>
+<p>Visual editor 테이블 기능 사용하면 됨. (위쪽 table) 클릭하면 다음과 같은 메뉴가 나옴.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/table.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+<section id="코드-블록-넣기" class="level2">
+<h2 class="anchored" data-anchor-id="코드-블록-넣기">코드 블록 넣기</h2>
+<p>코드 블록은 그냥 코드만 넣는 기능! 언어를 선택할 시 그에 맞는 하이라이팅 기능 제공. Ctrl + / 검색으로 Code block 넣기 선택!</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;">import</span> os</span>
+<span id="cb1-2"><span class="dv" style="color: #AD0000;">1</span> <span class="op" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span></code></pre></div>
+</section>
+<section id="수식-입력-기능" class="level2">
+<h2 class="anchored" data-anchor-id="수식-입력-기능">수식 입력 기능</h2>
+<p>기본 적인 수식 입력은 Ctrl + / 로 inline math 혹은 display math 선택</p>
+<p>커스텀 LaTeX 코드를 입력하고 싶은 경우, 따로 def을 사용해서 설정 할 수 있음. 커스텀 코드는 보여주고 싶지 않으므로 다음과 같이 .hidden으로 감싸줌.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/customlatex.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>위와 같이 입력해놓으면 새로운 latex 코드인 <code>\RR</code> 함수를 사용 할 수 있음.</p>
+<ul>
+<li><code>\RR</code> -&gt; <img src="https://latex.codecogs.com/png.latex?%5Cbf%7BR%7D"></li>
+</ul>
+</section>
+<section id="flow-챠트-그리기" class="level2">
+<h2 class="anchored" data-anchor-id="flow-챠트-그리기">Flow 챠트 그리기!</h2>
+<p>mermaid 앱을 사용하여 flow chart 그리는 것을 지원해 줌! 주의할 점은 Rcode 청크를 먼저 입력한 후에, {r} 부분을 {mermaid} 바꿔주면 됨.</p>
+<p>아래와 같은 mermaid 코드는</p>
+<pre class="mermaid"><code>flowchart LR
+  A[qmd] --&gt; B(Pandoc)
+  B --&gt; C{Kniting}
+  C --&gt; D[Word]
+  C --&gt; E[HTML]
+  C --&gt; F[PDF]</code></pre>
+<ul>
+<li><p>flowchart LR는 왼쪽에서 오른쪽으로 가는 flow chart를 의미</p></li>
+<li><p>대괄호 (사각형 엣지), 중괄호 (마름모), 괄호 (둥근 엣지) 를 <code>의미</code></p></li>
+<li><p><code>%%| echo: true</code> 옵션으로 코드 에코 지원</p></li>
+<li><p>실행 언어를 <code>mermaid</code> 로 설정</p></li>
+</ul>
+<p>다음과 같은 flow chart를 생성해낸다.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A(Qmd) --&gt; B[Pandoc]
+  B --&gt; C{Kniting}
+  C --&gt; D[Word]
+  C --&gt; E[HTML]
+  C --&gt; F[PDF]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>엄청 많은 템플릿을 지원하므로, <a href="https://mermaid-js.github.io/mermaid/#/">mermaid 홈페이지</a>를 참고하자.</p>
+<section id="순서도-넣기" class="level3">
+<h3 class="anchored" data-anchor-id="순서도-넣기">순서도 넣기</h3>
+<p>sequenceDiagram 예제</p>
+<div class="cell" data-fig-width="80%">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;">```{mermaid}</span></span>
+<span id="cb3-2">%%| fig<span class="ot" style="color: #003B4F;">-w</span>idth: <span class="dv" style="color: #AD0000;">80</span>%</span>
+<span id="cb3-3">sequenceDiagram</span>
+<span id="cb3-4">  participant Alice</span>
+<span id="cb3-5">  participant Bob</span>
+<span id="cb3-6">  Alice-&gt;&gt;John: Hello John, how are you?</span>
+<span id="cb3-7">  loop Healthcheck</span>
+<span id="cb3-8">    John-&gt;&gt;John: Fight against hypochondria</span>
+<span id="cb3-9">  end</span>
+<span id="cb3-10">  Note right of John: Rational thoughts &lt;br/&gt;prevail!</span>
+<span id="cb3-11">  John--&gt;&gt;Alice: Great!</span>
+<span id="cb3-12">  John-&gt;&gt;Bob: How about you?</span>
+<span id="cb3-13">  Bob--&gt;&gt;John: Jolly good!</span>
+<span id="cb3-14"><span class="ot" style="color: #003B4F;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-2">sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&gt;&gt;John: Hello John, how are you?
+  loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br>prevail!
+  John--&gt;&gt;Alice: Great!
+  John-&gt;&gt;Bob: How about you?
+  Bob--&gt;&gt;John: Jolly good!
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>stateDiagram 예제</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><span class="in" style="color: #5E5E5E;">```{mermaid}</span></span>
+<span id="cb4-2">stateDiagram</span>
+<span id="cb4-3">    direction TB</span>
+<span id="cb4-4">    [<span class="ot" style="color: #003B4F;">*</span>] --&gt; 문서작업시작</span>
+<span id="cb4-5">    문서작업시작 --&gt; 열심히연구</span>
+<span id="cb4-6">    열심히연구 --&gt; 행복!</span>
+<span id="cb4-7">    <span class="kw" style="color: #003B4F;">state</span> 열심히연구 {</span>
+<span id="cb4-8">      direction LR</span>
+<span id="cb4-9">      코드작성 --&gt; 코드리뷰</span>
+<span id="cb4-10">    }</span>
+<span id="cb4-11">    열심히연구 --&gt; 좌절ㅠ</span>
+<span id="cb4-12"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-3">stateDiagram
+    direction TB
+    [*] --&gt; 문서작업시작
+    문서작업시작 --&gt; 열심히연구
+    열심히연구 --&gt; 행복!
+    state 열심히연구 {
+      direction LR
+      코드작성 --&gt; 코드리뷰
+    }
+    열심히연구 --&gt; 좌절ㅠ
+</pre>
+<div id="mermaid-tooltip-3" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="graphviz" class="level3">
+<h3 class="anchored" data-anchor-id="graphviz">Graphviz</h3>
+<p>Graphviz의 경우 <code>//| echo: true</code> 옵션을 사용하여 코드 에코 기능을 사용할 수 있음. 다음과 같은 코드는 네트워크 관계도를 만들어 줌.</p>
+<ul>
+<li>실행 언어를 <code>dot</code>으로 설정</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><span class="in" style="color: #5E5E5E;">```{dot}</span></span>
+<span id="cb5-2">graph G {</span>
+<span id="cb5-3">  layout=neato</span>
+<span id="cb5-4">  run -- intr;</span>
+<span id="cb5-5">  intr -- runbl;</span>
+<span id="cb5-6">  runbl -- run;</span>
+<span id="cb5-7">  run -- kernel;</span>
+<span id="cb5-8">  kernel -- zombie;</span>
+<span id="cb5-9">  kernel -- <span class="fu" style="color: #4758AB;">sleep</span>;</span>
+<span id="cb5-10">  kernel -- runmem;</span>
+<span id="cb5-11">}</span>
+<span id="cb5-12"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<p>
+<svg width="248pt" height="267pt" viewbox="0.00 0.00 247.70 266.90" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 262.9)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-262.9 243.7,-262.9 243.7,4 -4,4"></polygon> <!-- run --> <g id="node1" class="node">
+<title>
+run
+</title>
+<ellipse fill="none" stroke="black" cx="154.17" cy="-92.91" rx="27" ry="18"></ellipse> <text text-anchor="middle" x="154.17" y="-88.71" font-family="Times,serif" font-size="14.00">run</text> </g> <!-- intr --> <g id="node2" class="node">
+<title>
+intr
+</title>
+<ellipse fill="none" stroke="black" cx="212.7" cy="-45.45" rx="27" ry="18"></ellipse> <text text-anchor="middle" x="212.7" y="-41.25" font-family="Times,serif" font-size="14.00">intr</text> </g> <!-- run&#45;&#45;intr --> <g id="edge1" class="edge">
+<title>
+run–intr
+</title>
+<path fill="none" stroke="black" d="M171.42,-78.93C178.97,-72.8 187.82,-65.63 195.38,-59.49"></path> </g> <!-- kernel --> <g id="node4" class="node">
+<title>
+kernel
+</title>
+<ellipse fill="none" stroke="black" cx="124.53" cy="-167.49" rx="35.33" ry="18"></ellipse> <text text-anchor="middle" x="124.53" y="-163.29" font-family="Times,serif" font-size="14.00">kernel</text> </g> <!-- run&#45;&#45;kernel --> <g id="edge4" class="edge">
+<title>
+run–kernel
+</title>
+<path fill="none" stroke="black" d="M147.15,-110.58C142.46,-122.39 136.31,-137.85 131.6,-149.68"></path> </g> <!-- runbl --> <g id="node3" class="node">
+<title>
+runbl
+</title>
+<ellipse fill="none" stroke="black" cx="148.86" cy="-18" rx="31.34" ry="18"></ellipse> <text text-anchor="middle" x="148.86" y="-13.8" font-family="Times,serif" font-size="14.00">runbl</text> </g> <!-- intr&#45;&#45;runbl --> <g id="edge2" class="edge">
+<title>
+intr–runbl
+</title>
+<path fill="none" stroke="black" d="M189.65,-35.54C184.65,-33.39 179.34,-31.1 174.25,-28.92"></path> </g> <!-- runbl&#45;&#45;run --> <g id="edge3" class="edge">
+<title>
+runbl–run
+</title>
+<path fill="none" stroke="black" d="M150.15,-36.13C150.98,-47.82 152.05,-62.97 152.88,-74.68"></path> </g> <!-- zombie --> <g id="node5" class="node">
+<title>
+zombie
+</title>
+<ellipse fill="none" stroke="black" cx="191.31" cy="-215.25" rx="39.42" ry="18"></ellipse> <text text-anchor="middle" x="191.31" y="-211.05" font-family="Times,serif" font-size="14.00">zombie</text> </g> <!-- kernel&#45;&#45;zombie --> <g id="edge5" class="edge">
+<title>
+kernel–zombie
+</title>
+<path fill="none" stroke="black" d="M145.29,-182.34C153.1,-187.92 162,-194.28 169.87,-199.91"></path> </g> <!-- sleep --> <g id="node6" class="node">
+<title>
+sleep
+</title>
+<ellipse fill="none" stroke="black" cx="95.81" cy="-240.9" rx="30.76" ry="18"></ellipse> <text text-anchor="middle" x="95.81" y="-236.7" font-family="Times,serif" font-size="14.00">sleep</text> </g> <!-- kernel&#45;&#45;sleep --> <g id="edge6" class="edge">
+<title>
+kernel–sleep
+</title>
+<path fill="none" stroke="black" d="M117.57,-185.26C113.06,-196.8 107.2,-211.78 102.7,-223.29"></path> </g> <!-- runmem --> <g id="node7" class="node">
+<title>
+runmem
+</title>
+<ellipse fill="none" stroke="black" cx="43.22" cy="-156.34" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="43.22" y="-152.14" font-family="Times,serif" font-size="14.00">runmem</text> </g> <!-- kernel&#45;&#45;runmem --> <g id="edge7" class="edge">
+<title>
+kernel–runmem
+</title>
+<path fill="none" stroke="black" d="M90.51,-162.82C88.51,-162.55 86.49,-162.27 84.46,-161.99"></path> </g> </g>
+</svg>
+</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p>콤마 세개 연산자</p>
+<p>::: 를 사용하면 HTML 언어에서의 div를 설정할 수 있음. 이러한 기능은 원하는 특정 서식을 원하는 부분에 적용할 수 있도록 도와줌.</p>
+<ul>
+<li>사용 예: .callout-note class 를 적용</li>
+</ul>
+<!-- -->
+<pre><code>::: {.callout-note}
+이 문장을 Note로 만들어 줍니다.
+:::</code></pre>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>이 문장을 Note로 만들어 줍니다.</p>
+</div>
+</div>
+<p>Visual editor 에서는 <code>Ctrl + /</code> 를 사용해서 Div를 선택 후, class에 <code>.callout-note</code>를 입력</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/div-example.png" class="img-fluid figure-img" width="400"></p>
+<p></p><p></p>
+</figure>
+</div>
+</section>
+<section id="r-코드-청크-입력방법" class="level2">
+<h2 class="anchored" data-anchor-id="r-코드-청크-입력방법">R 코드 청크 입력방법</h2>
+<p><code>#|</code> 를 사용해서 옵션 설정함. 설정할 수 있는 옵션들</p>
+<ul>
+<li><p>echo</p></li>
+<li><p>eval</p></li>
+<li><p>output</p></li>
+<li><p>include</p></li>
+<li><p>warning</p></li>
+<li><p>error</p></li>
+</ul>
+<p>위의 옵션들을 <code>true</code> 혹은 <code>false</code>로 설정할 수 있음.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>Authoring</category>
+  <guid>https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/index.html</guid>
+  <pubDate>Tue, 02 Aug 2022 04:00:00 GMT</pubDate>
+  <media:content url="https://statisticsplaybook-qmd.netlify.app/docs/blog/posts/qmd-master/coding.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Quarto 블로그에 Subscribe 버튼 설정하기</title>
   <dc:creator>이삭</dc:creator>

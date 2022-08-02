@@ -1,0 +1,14 @@
+{
+  "hash": "30b862d6539201fb8f403d6ce7b5410c",
+  "result": {
+    "markdown": "---\ntitle: Quarto 블로그에 Subscribe 버튼 설정하기\nsubtitle: Mailchimp 연동하기 \ndescription: |\n  Quarto 블로그에서 제공하는 구독버튼 설정하는 방법에 대하여 알아보자.\ncategories:\n  - Blog\n  - Quarto\nauthor: 이삭\ndate: 7/22/2022\n---\n\n\n## Quarto 블로그의 구독버튼 설정\n\nQuarto를 사용하여 웹사이트를 만들게 되면 사이트 안에 블로그 (정확히는 listing page)를 구성할 수 있게 된다. 공식 홈페이지의 설명이 불충분하게 되어있고, 실제 이메일 서비스와의 연결 방법은 생략되어 있어 작성하게 되었다.\n\n### signup.html 코드\n\n블로그를 구성하기 위하여 `docs` 폴더 안에 `blog` 폴더를 만들어야 하고, `blog` 폴더 바로 아래 구독 버튼과 관련한 파일인 `signup.html` 파일을 찾을 수 있다.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n<!-- Begin Mailchimp Signup Form -->\n<div id=\"mc_embed_signup\" style=\"padding-bottom: 1em; max-width: 400px;\" class=\"ms-auto me-auto\">\n<form action=\"이메일 서비스 가입후 본인 것으로 채워야하는 내용\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n    <div id=\"mc_embed_signup_scroll\">\n\t<h3>구독하기</h3>\n<div class=\"mc-field-group\">\n\t<label for=\"mce-EMAIL\">이메일주소</label>\n\t<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" style=\"font-size: 0.8em; padding: .2em;\">\n</div>\n\t<div id=\"mce-responses\" class=\"clear foot\">\n\t\t<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n\t\t<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n\t</div>\n<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_3a65f9cd50e92382b37c77ca5_431ec6d99a\" tabindex=\"-1\" value=\"\"></div>\n        <div class=\"optionalParent\">\n                <input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" style=\"min-width: 150px; font-size: 0.8em;\" id=\"mc-embedded-subscribe\" class=\"button btn btn-light btn-sm ms-auto me-auto\">\n        </div>\n    </div>\n</form>\n</div>\n<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\n<!--End mc_embed_signup-->\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
