@@ -29,7 +29,7 @@ website:
         href: https://github.com/statisticsplaybook
         aria-label: 슬기로운통계생활 GitHub
       - icon: rss
-        href: index.xml
+        href: docs/blog/index.xml
         
   sidebar:
     - title: "R 기초통계"
