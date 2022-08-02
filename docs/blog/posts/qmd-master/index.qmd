@@ -8,7 +8,7 @@ categories:
   - Authoring
 author: 슬기로운통계생활
 date: 8/2/2022
-image: quarto-logo.jpg
+image: ctrl-slash.png
 image-alt: "qmd = quarto + markdown"
 ---
 
