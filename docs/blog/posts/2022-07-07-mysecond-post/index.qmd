@@ -12,7 +12,7 @@ image: coding.jpg
 image-alt: "코딩하는 이미지 입니다."
 ---
 
-![](coding.jpg){.preview-image fig-align="center" fig-alt="코딩하는 이미지 입니다."}
+![](coding.jpg){.preview-image fig-alt="코딩하는 이미지 입니다." fig-align="center" width="750"}
 
 ## Callout Basics
 
