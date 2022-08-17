@@ -3,7 +3,7 @@ title: 슬기로운통계생활 Blog
 subtitle: News, tips, about R and Stat
 listing:
   sort: "date desc"
-  contents: posts
+  contents: "posts"
   sort-ui: false
   filter-ui: false
   categories: true
