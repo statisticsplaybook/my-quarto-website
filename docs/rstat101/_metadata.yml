@@ -2,7 +2,6 @@ comments:
   giscus:
     repo: statisticsplaybook/my-quarto-website
     category: Comments
-    lang: ko
-    theme: dark
+    language: ko
 sidebar: rstat101
 search: false
