@@ -3,5 +3,6 @@ comments:
     repo: statisticsplaybook/my-quarto-website
     category: Comments
     lang: ko
+    theme: dark
 sidebar: rstat101
 search: false
