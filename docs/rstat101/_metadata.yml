@@ -1,2 +1,7 @@
+comments:
+  giscus:
+    repo: statisticsplaybook/my-quarto-website
+    category: Comments
+    lang: ko
 sidebar: rstat101
 search: false
